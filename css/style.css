@@ -43,7 +43,7 @@ button { font: inherit; }
 .nav-link[aria-current="page"] { box-shadow: inset 2px 0 var(--accent); }
 
 main { width: min(100% - 2rem, var(--content-width)); min-height: 68vh; margin-inline: auto; }
-.hero { position: relative; overflow: hidden; padding: clamp(4rem, 11vw, 7.6rem) 0 clamp(3.5rem, 8vw, 6rem); }
+.hero { position: relative; overflow: hidden; padding: clamp(1.75rem, 4vw, 2.75rem) 0 clamp(3.5rem, 8vw, 6rem); }
 .hero::after { position: absolute; z-index: -1; top: 2rem; right: -9rem; width: min(43vw, 430px); aspect-ratio: 1; border: 1px solid rgb(209 108 113 / 12%); border-radius: 50%; box-shadow: 0 0 0 42px rgb(209 108 113 / 2%), 0 0 0 92px rgb(209 108 113 / 2%); content: ""; }
 .eyebrow { display: inline-flex; align-items: center; gap: .55rem; margin: 0 0 1rem; color: var(--accent-soft); font-size: .78rem; font-weight: 750; letter-spacing: .13em; text-transform: uppercase; }
 .eyebrow::before { width: 20px; height: 1px; background: currentColor; content: ""; }
