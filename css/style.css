@@ -130,7 +130,6 @@ noscript + .update-list { display: none; }
 @media (min-width: 620px) {
   .header-inner, main, .footer-inner { width: min(100% - 3rem, var(--content-width)); }
   .card-grid, .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .project-overview { grid-template-columns: minmax(0, 1.2fr) minmax(250px, .8fr); }
   .detail-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .update-card { grid-template-columns: 150px minmax(0, 1fr); }
   .update-meta { grid-row: span 2; align-content: start; padding-top: .18rem; }
