@@ -117,9 +117,13 @@ h1 .accent { color: var(--accent-soft); }
 .contact-grid { display: grid; gap: 1rem; }
 .contact-card { min-height: 210px; }
 .contact-value { display: inline-block; overflow-wrap: anywhere; color: var(--muted); font-size: .92rem; }
+.contact-card a.contact-value { color: var(--accent-soft); font-weight: 650; text-decoration: none; }
+.contact-card a.contact-value:hover { color: #f0b9bc; text-decoration: underline; }
 .support-panel { display: grid; gap: 1rem; align-items: center; border: 1px solid #564345; border-radius: var(--radius); padding: clamp(1.2rem, 4vw, 2rem); background: linear-gradient(135deg, rgb(209 108 113 / 9%), transparent 65%), var(--surface); }
 .support-panel h2 { margin-bottom: .45rem; font-size: 1.5rem; letter-spacing: -.04em; }
 .support-panel p { max-width: 620px; margin: 0; color: var(--muted); }
+.support-addresses { overflow-wrap: anywhere; }
+.support-addresses strong { color: var(--text); }
 .contact-page .section { padding-bottom: 2.5rem; }
 .contact-page .section:last-of-type { padding-bottom: 4rem; }
 
