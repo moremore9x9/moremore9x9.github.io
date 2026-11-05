@@ -91,6 +91,9 @@ h1 .accent { color: var(--accent-soft); }
 .page-intro { padding: clamp(3.1rem, 8vw, 5.7rem) 0 2.2rem; }
 .page-intro h1 { font-size: clamp(2.4rem, 6vw, 4.2rem); }
 .page-intro .hero-copy { max-width: 720px; margin-bottom: 0; }
+.project-status { margin: 0; }
+.page-title-row { display: flex; flex-direction: column; align-items: flex-start; gap: .75rem; margin-bottom: 1.1rem; }
+.page-title-row h1 { margin-bottom: 0; }
 .project-overview { display: grid; gap: 1rem; margin-bottom: 2.5rem; }
 .overview-panel, .content-panel { border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem; background: var(--surface); }
 .overview-panel h2, .content-panel h2 { margin-bottom: .7rem; font-size: 1.1rem; letter-spacing: -.02em; }
@@ -129,6 +132,7 @@ noscript + .update-list { display: none; }
 
 @media (min-width: 620px) {
   .header-inner, main, .footer-inner { width: min(100% - 3rem, var(--content-width)); }
+  .page-title-row { flex-direction: row; align-items: center; gap: .75rem 1.25rem; }
   .card-grid, .contact-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .detail-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .update-card { grid-template-columns: 150px minmax(0, 1fr); }
