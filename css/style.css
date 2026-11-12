@@ -136,7 +136,6 @@ h1 .accent { color: var(--accent-soft); }
 .footer-inner p { margin: 0; }
 .footer-brand { color: var(--text); font-weight: 700; }
 .no-script { margin: 0 0 1rem; border-radius: 10px; padding: .75rem 1rem; background: #2a1e20; color: var(--muted); font-size: .88rem; }
-noscript + .update-list { display: none; }
 
 @media (min-width: 620px) {
   .header-inner, main, .footer-inner { width: min(100% - 3rem, var(--content-width)); }
