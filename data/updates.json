@@ -5,5 +5,12 @@
     "category": "Progresso",
     "title": "Status do desenvolvimento da engine",
     "description": "Fase inicial da engine quase concluída, 13 de 22 fases concluídas. O que foi feito até agora em cada fase:\nFases 0-3: projeto para teste, game loop, renderização, câmera, entrada e cenas;\nFases 4-6: assets, animações, tilemaps, colisão e entidades;\nFases 7-9: UI, diálogos, áudio, saves, testes e profiling;\nFase 10: ordenação por Y, sprites altos e oclusão;\nFase 11: mundos modificáveis, colisão dinâmica e persistência multiárea;\nFase 12: ações contextuais, cursor, alvos e validação;\nFase 13: relógio, agendamento e progressão temporal.\n\nO que será feito nas próximas fases:\nFase 14: pathfinding, movimentação e obstáculos dinâmicos;\nFase 15: estruturação e validação de mapas, assets e definições JSON;\nFase 16: componentes de interface, slots e menu;\nFase 17: solo, sementes, irrigação, crescimento e colheita;\nFase 18: recursos destrutíveis, ferramentas e recompensas;\nFase 19: Ataques, detecção de acertos, dano e inimigos;\nFase 20: partículas, efeitos e atmosfera;\nFase 21: integração, persistência e testes de estresse;\nFase 22: distribuição e compatibilidade.\n\nSe essa é a fase inicial, o que será feito após isso ?\n- Estações e calendário completo, clima e diversos cultivos;\n- Crafting, máquinas de produção, economia, lojas e progressão de equipamentos;\n- Relações sociais, rotinas diárias completas de NPCs, eventos e missões.\n- Minas com múltiplos níveis, geração procedural, inimigos variados e combate aprofundado.\n\nDisponibilizarei uma versão pública da engine quando a fase 22 estiver concluída, sem quaisquer restrições de uso e modificação."
+  },
+  {
+    "date": "2026-11-12",
+    "project": "ns4android",
+    "category": "Progresso",
+    "title": "Status do desenvolvimento do NS4Android",
+    "description": "O progresso até agora consistiu em:\n- Parte 1: extração e análise dos arquivos. Title ID, seis módulos NSO e o NPDM;\n- Parte 2: recompilação e execução ARM64, na qual trabalhei com a análise de instruções, relocações, TLS, chamadas SVC e execução controlada de funções originais do SDK;\n- Parte 3: adoção de uma infraestutura NCE após revisar os ports P4G (Persona 4 Golden), BOTWRecompAndroid e TOTKDroid.\n\nEssa semana pretendo:\n- Carregar os seis NSOs;\n- Resolver dependências entre módulos e implementar as dependências indispensáveis;\n- Executar a cadeia original de inicialização, identificando os servições Horizon ainda necessários."
   }
 ]
