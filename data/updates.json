@@ -12,5 +12,12 @@
     "category": "Progresso",
     "title": "Status do desenvolvimento do NS4Android",
     "description": "O progresso até agora consistiu em:\n- Parte 1: extração e análise dos arquivos. Title ID, seis módulos NSO e o NPDM;\n- Parte 2: recompilação e execução ARM64, na qual trabalhei com a análise de instruções, relocações, TLS, chamadas SVC e execução controlada de funções originais do SDK;\n- Parte 3: adoção de uma infraestutura NCE após revisar os ports P4G (Persona 4 Golden), BOTWRecompAndroid e TOTKDroid.\n\nEssa semana pretendo:\n- Carregar os seis NSOs;\n- Resolver dependências entre módulos e implementar as dependências indispensáveis;\n- Executar a cadeia original de inicialização, identificando os servições Horizon ainda necessários."
+  },
+  {
+    "date": "2026-11-12",
+    "project": "storm-3-android",
+    "category": "Lançamento",
+    "title": "Volume 1 traduzido e disponível",
+    "description": "Volume 1 da novel de Mushoku Tensei traduzida para pt-br. A tradução foi feita com base na Light Novel oficial em inglês e, posteriormente, revisada com base na Web Novel em japonês. Sugestões são bem-vindas.\n\nMediafire: https://www.mediafire.com/file/ah1bhr97abax8az/Mushoku+Tensei+-+Jobless+Reincarnation+Volume+1+(PT-BR+v1.0).pdf/file\n\nDrive: https://drive.google.com/file/d/1FwEMY2yjFpPYJlj7AyAQc_zMuN-JrS-g/view?pli=1"
   }
 ]

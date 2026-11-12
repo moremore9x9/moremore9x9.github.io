@@ -30,6 +30,28 @@ function escapeHtml(value) {
   })[character]);
 }
 
+function trimUrlSuffix(url) {
+  const suffix = url.match(/[.,;:!?]+$/);
+  return suffix ? url.slice(0, -suffix[0].length) : url;
+}
+
+function linkify(value) {
+  const urlPattern = /https?:\/\/[^\s]+/g;
+  let markup = "";
+  let lastIndex = 0;
+
+  for (const match of String(value).matchAll(urlPattern)) {
+    const url = trimUrlSuffix(match[0]);
+    const suffix = match[0].slice(url.length);
+    markup += escapeHtml(value.slice(lastIndex, match.index));
+    markup += `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(url)}</a>`;
+    markup += escapeHtml(suffix);
+    lastIndex = match.index + match[0].length;
+  }
+
+  return markup + escapeHtml(String(value).slice(lastIndex));
+}
+
 function formatDate(value) {
   const parts = value.split("-").map(Number);
   const date = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2]));
@@ -46,7 +68,7 @@ function updateMarkup(update) {
   return `<article class="update-card">
     <div class="update-meta"><time datetime="${escapeHtml(update.date)}">${escapeHtml(formatDate(update.date))}</time><a class="update-project" href="${projectHref}">${escapeHtml(projectName)}</a>${category}</div>
     <h3>${escapeHtml(update.title)}</h3>
-    <p>${escapeHtml(update.description)}</p>
+    <p>${linkify(update.description)}</p>
   </article>`;
 }
 
