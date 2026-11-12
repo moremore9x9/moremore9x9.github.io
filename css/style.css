@@ -37,6 +37,11 @@ button { font: inherit; }
 .brand-mark { display: grid; width: 34px; aspect-ratio: 1; place-items: center; border: 1px solid rgb(var(--accent-rgb) / 55%); border-radius: 11px; background: rgb(var(--accent-rgb) / 12%); color: var(--accent-soft); }
 .brand:hover .brand-mark { border-color: rgb(var(--accent-rgb) / 80%); color: var(--accent-bright); }
 .brand-mark svg { width: 20px; height: 20px; }
+.language-switcher { display: inline-flex; align-items: center; gap: 2px; margin-right: auto; padding: 2px; border: 1px solid var(--border); border-radius: 999px; background: var(--surface); }
+.language-option { min-width: 40px; min-height: 36px; border: 0; border-radius: 999px; padding: .2rem .55rem; background: transparent; color: var(--muted); font-size: .7rem; font-weight: 750; letter-spacing: .03em; white-space: nowrap; cursor: pointer; transition: color .18s ease, background-color .18s ease; }
+.language-option:hover { color: var(--text); }
+.language-option[aria-pressed="true"], .language-option.is-active { background: rgb(var(--accent-rgb) / 18%); color: var(--accent-bright); }
+.language-option:focus-visible { outline: none; box-shadow: var(--focus); }
 .menu-toggle { display: grid; width: 46px; min-height: 44px; place-items: center; border: 1px solid var(--border); border-radius: 12px; background: var(--surface); color: var(--text); cursor: pointer; }
 .menu-toggle svg { width: 20px; height: 20px; }
 .primary-nav { display: none; position: absolute; inset: calc(100% + 1px) 0 auto; padding: .6rem 1rem 1rem; border-bottom: 1px solid var(--border); background: var(--bg); }

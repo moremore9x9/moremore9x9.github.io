@@ -4,28 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#151515">
-  <meta name="description" content="Um espaço para acompanhar projetos de software, jogos e notas de desenvolvimento.">
+  <meta name="description" content="Um espaço para acompanhar projetos de software, jogos e notas de desenvolvimento." data-i18n-attr="content:meta.home.description">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Projetos — desenvolvimento em andamento">
-  <meta property="og:description" content="Projetos pessoais, desenvolvimento de jogos e notas de progresso em um só lugar.">
-  <title>Projetos — início</title>
+  <meta property="og:locale" content="pt_BR" data-i18n-attr="content:meta.locale">
+  <meta property="og:title" content="Projetos — desenvolvimento em andamento" data-i18n-attr="content:meta.home.ogTitle">
+  <meta property="og:description" content="Projetos pessoais, desenvolvimento de jogos e notas de progresso em um só lugar." data-i18n-attr="content:meta.home.ogDescription">
+  <title data-i18n="meta.home.title">Projetos — início</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/i18n.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <a class="skip-link" href="#conteudo" data-i18n="global.skipToContent">Pular para o conteúdo</a>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="index.html" aria-label="Página inicial"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m4 11.5 8-7.5 8 7.5"/><path d="M6.5 9.5V20h11V9.5"/><path d="M10 20v-5h4v5"/></svg></span></a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="primary-nav">
+      <a class="brand" href="index.html" aria-label="Página inicial" data-i18n-attr="aria-label:global.homeLabel"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="m4 11.5 8-7.5 8 7.5"/><path d="M6.5 9.5V20h11V9.5"/><path d="M10 20v-5h4v5"/></svg></span></a>
+      <div class="language-switcher" role="group" aria-label="Idioma" data-i18n-attr="aria-label:global.languageLabel">
+        <button class="language-option" type="button" data-language-option="pt-BR" aria-pressed="true" aria-label="Português (Brasil)" lang="pt-BR">PT-BR</button>
+        <button class="language-option" type="button" data-language-option="en" aria-pressed="false" aria-label="English" lang="en">EN</button>
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="primary-nav" data-i18n-attr="aria-label:global.menuLabel">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
-      <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal">
+      <nav class="primary-nav" id="primary-nav" aria-label="Navegação principal" data-i18n-attr="aria-label:global.navLabel">
         <ul class="nav-list">
           <li><a class="nav-link" href="projeto-1.html">CCChaos Engine</a></li>
           <li><a class="nav-link" href="projeto-2.html">NS4Android</a></li>
           <li><a class="nav-link" href="projeto-3.html">Mushoku Tensei Novel PT-BR</a></li>
-          <li><a class="nav-link" href="contato.html">Contato e apoio</a></li>
+          <li><a class="nav-link" href="contato.html" data-i18n="global.contactNav">Contato e apoio</a></li>
         </ul>
       </nav>
     </div>
@@ -33,52 +39,52 @@
 
   <main id="conteudo">
     <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow">Projetos independentes</p>
-      <h1 id="hero-title">Ideias de Moremore <br><span class="accent">em desenvolvimento</span></h1>
-      <p class="hero-copy">Acompanhe todos os meus projetos por aqui.</p>
+      <p class="eyebrow" data-i18n="home.heroEyebrow">Projetos independentes</p>
+      <h1 id="hero-title"><span data-i18n="home.heroTitleLead">Ideias de Moremore</span> <br><span class="accent" data-i18n="home.heroTitleAccent">em desenvolvimento</span></h1>
+      <p class="hero-copy" data-i18n="home.heroCopy">Acompanhe todos os meus projetos por aqui.</p>
       <div class="hero-actions">
-        <a class="button" href="#projetos">Explorar projetos <span aria-hidden="true">↓</span></a>
-        <a class="button button-secondary" href="contato.html">Contato e apoio</a>
+        <a class="button" href="#projetos"><span data-i18n="home.explore">Explorar projetos</span> <span aria-hidden="true">↓</span></a>
+        <a class="button button-secondary" href="contato.html" data-i18n="global.contactNav">Contato e apoio</a>
       </div>
     </section>
 
     <section class="section" id="projetos" aria-labelledby="projects-title">
       <div class="section-heading">
-        <h2 id="projects-title">Projetos</h2>
+        <h2 id="projects-title" data-i18n="home.projectsTitle">Projetos</h2>
       </div>
       <div class="card-grid">
         <article class="card project-card">
-          <div class="project-card-top"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 0 1 0 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 0 1 0-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281Z"/><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg></span><span class="status">Em andamento</span></div>
+          <div class="project-card-top"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.324.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.24-.438.613-.431.992a6.759 6.759 0 0 1 0 .255c-.007.378.138.75.43.99l1.005.828c.424.35.534.954.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.57 6.57 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.28c-.09.543-.56.941-1.11.941h-2.594c-.55 0-1.02-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.992a6.932 6.932 0 0 1 0-.255c.007-.378-.138-.75-.43-.99l-1.004-.828a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.087.22-.128.332-.183.582-.495.644-.869l.214-1.281Z"/><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/></svg></span><span class="status" data-i18n="global.statusInProgress">Em andamento</span></div>
           <h3>CCChaos Engine</h3>
-          <p>Engine 2D fortemente baseada em Stardew Valley.</p>
-          <div class="card-footer"><a class="text-link" href="projeto-1.html">Ver projeto <span aria-hidden="true">↗</span></a></div>
+          <p data-i18n="home.ccchaosDescription">Engine 2D fortemente baseada em Stardew Valley.</p>
+          <div class="card-footer"><a class="text-link" href="projeto-1.html"><span data-i18n="home.viewProject">Ver projeto</span> <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="card project-card">
-          <div class="project-card-top"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.1" fill="currentColor" stroke="none"/><g fill="currentColor" stroke="none"><g transform="translate(12 12)"><circle cx="0" cy="-5.2" r="1.35"/></g><g transform="translate(12 12) rotate(120)"><circle cx="0" cy="-5.2" r="1.35"/></g><g transform="translate(12 12) rotate(240)"><circle cx="0" cy="-5.2" r="1.35"/></g></g><g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"><g transform="translate(12 12)"><path d="M1.2-5.1c1.5 1 2.4 2.6 2.3 4.4"/></g><g transform="translate(12 12) rotate(120)"><path d="M1.2-5.1c1.5 1 2.4 2.6 2.3 4.4"/></g><g transform="translate(12 12) rotate(240)"><path d="M1.2-5.1c1.5 1 2.4 2.6 2.3 4.4"/></g></g></svg></span><span class="status">Em andamento</span></div>
+          <div class="project-card-top"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="2.1" fill="currentColor" stroke="none"/><g fill="currentColor" stroke="none"><g transform="translate(12 12)"><circle cx="0" cy="-5.2" r="1.35"/></g><g transform="translate(12 12) rotate(120)"><circle cx="0" cy="-5.2" r="1.35"/></g><g transform="translate(12 12) rotate(240)"><circle cx="0" cy="-5.2" r="1.35"/></g></g><g fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"><g transform="translate(12 12)"><path d="M1.2-5.1c1.5 1 2.4 2.6 2.3 4.4"/></g><g transform="translate(12 12) rotate(120)"><path d="M1.2-5.1c1.5 1 2.4 2.6 2.3 4.4"/></g><g transform="translate(12 12) rotate(240)"><path d="M1.2-5.1c1.5 1 2.4 2.6 2.3 4.4"/></g></g></svg></span><span class="status" data-i18n="global.statusInProgress">Em andamento</span></div>
           <h3>NS4Android</h3>
-          <p>Port para Android de Naruto Storm 4 da versão de Switch.</p>
-          <div class="card-footer"><a class="text-link" href="projeto-2.html">Ver projeto <span aria-hidden="true">↗</span></a></div>
+          <p data-i18n="home.ns4androidDescription">Port para Android de Naruto Storm 4 da versão de Switch.</p>
+          <div class="card-footer"><a class="text-link" href="projeto-2.html"><span data-i18n="home.viewProject">Ver projeto</span> <span aria-hidden="true">↗</span></a></div>
         </article>
         <article class="card project-card">
-          <div class="project-card-top"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg></span><span class="status">Em andamento</span></div>
+          <div class="project-card-top"><span class="project-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg></span><span class="status" data-i18n="global.statusInProgress">Em andamento</span></div>
           <h3>Mushoku Tensei Novel PT-BR</h3>
-          <p>Tradução para pt-br da Light Novel de Mushoku Tensei.</p>
-          <div class="card-footer"><a class="text-link" href="projeto-3.html">Ver projeto <span aria-hidden="true">↗</span></a></div>
+          <p data-i18n="home.mushokuDescription">Tradução para pt-br da Light Novel de Mushoku Tensei.</p>
+          <div class="card-footer"><a class="text-link" href="projeto-3.html"><span data-i18n="home.viewProject">Ver projeto</span> <span aria-hidden="true">↗</span></a></div>
         </article>
       </div>
     </section>
 
     <section class="section" aria-labelledby="updates-title">
       <div class="section-heading">
-        <div><p class="eyebrow">Diário</p><h2 id="updates-title">Notas recentes</h2><p>Atualizações dos projetos em ordem cronológica, da mais nova para a mais antiga.</p></div>
+        <div><p class="eyebrow" data-i18n="home.journalEyebrow">Diário</p><h2 id="updates-title" data-i18n="home.notesTitle">Notas recentes</h2><p data-i18n="home.notesDescription">Atualizações dos projetos em ordem cronológica, da mais nova para a mais antiga.</p></div>
       </div>
-      <noscript><p class="no-script">As notas são carregadas com JavaScript. Consulte as páginas de cada projeto para ver as informações de apresentação.</p></noscript>
+      <noscript><p class="no-script" data-i18n="home.notesNoscript">As notas são carregadas com JavaScript. Consulte as páginas de cada projeto para ver as informações de apresentação.</p></noscript>
       <div class="update-list" data-updates data-limit="4" aria-live="polite">
-        <div class="empty-state"><p>Carregando notas de desenvolvimento…</p></div>
+        <div class="empty-state"><p data-i18n="home.notesLoading">Carregando notas de desenvolvimento…</p></div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="footer-inner"><p>Feito por Moremore.</p></div></footer>
+  <footer class="site-footer"><div class="footer-inner"><p data-i18n="global.footer">Feito por Moremore.</p></div></footer>
 </body>
 </html>
