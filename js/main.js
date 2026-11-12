@@ -59,7 +59,7 @@ async function renderUpdates() {
   if (containers.length === 0) return;
 
   try {
-    const response = await fetch(updateDataUrl);
+    const response = await fetch(updateDataUrl, { cache: "no-cache" });
     if (!response.ok) throw new Error("Não foi possível carregar as atualizações.");
 
     const updates = await response.json();
